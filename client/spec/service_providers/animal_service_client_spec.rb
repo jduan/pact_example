@@ -17,7 +17,7 @@ describe AnimalServiceClient, :pact => true do
         with(method: :get, path: '/alligator', query: '').
         will_respond_with(
           status: 200,
-          headers: {'Content-Type' => 'application/json'},
+          headers: {'Content-Type' => 'application/json; charset=utf-8'},
           body: {name: 'Betty'} )
     end
 
