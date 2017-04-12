@@ -1,4 +1,5 @@
 require 'pact/provider/rspec'
+require './spec/service_consumers/provider_states'
 
 Pact.service_provider "Animal Service" do
 
